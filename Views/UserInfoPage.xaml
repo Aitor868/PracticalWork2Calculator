@@ -1,0 +1,13 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticalWork2Calculator.Views.UserInfoPage"
+             Title="Información del Usuario">
+    <VerticalStackLayout Spacing="10" Padding="30" VerticalOptions="CenterAndExpand">
+        <Label Text="Detalles del Usuario" FontSize="Header" HorizontalOptions="Center" Margin="0,0,0,20"/>
+        <Label x:Name="NameLabel" FontSize="Medium"/>
+        <Label x:Name="UsernameLabel" FontSize="Medium"/>
+        <Label x:Name="EmailLabel" FontSize="Medium"/>
+        <Label x:Name="PasswordLabel" FontSize="Medium"/> <Label x:Name="OperationsLabel" FontSize="Medium"/>
+        <Button Text="Volver al Conversor" Clicked="OnBackToConverterClicked" Margin="0,30,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,36 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticalWork2Calculator.Views.RegisterPage"
+             Title="Registro">
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Padding="30">
+            <Label Text="Crear Nueva Cuenta" FontSize="Title" HorizontalOptions="Center" Margin="0,0,0,20"/>
+            <Entry x:Name="NameEntry" Placeholder="Nombre Completo" />
+            <Entry x:Name="UsernameEntry" Placeholder="Nombre de Usuario" />
+            <Entry x:Name="EmailEntry" Placeholder="Correo Electrónico" Keyboard="Email"/>
+            <Entry x:Name="PasswordEntry" Placeholder="Contraseña" IsPassword="True" />
+            <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirmar Contraseña" IsPassword="True" />
+            
+            <Label x:Name="PasswordPolicyLabel" Text="La contraseña debe tener al menos 8 caracteres, una mayúscula, una minúscula, un número y un símbolo especial." FontSize="Small" TextColor="Gray"/>
+
+            <HorizontalStackLayout Margin="0,10,0,0" Spacing="10" VerticalOptions="Center">
+                <CheckBox x:Name="PolicyCheckBox" />
+                <Label VerticalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Acepto la " />
+                            <Span Text="política de protección de datos." TextColor="Blue" TextDecorations="Underline">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnPolicyTapped"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </HorizontalStackLayout>
+            
+            <Button Text="Registrar" Clicked="OnRegisterClicked" Margin="0,20,0,0" />
+            <Button Text="Volver a Inicio de Sesión" Clicked="OnBackToLoginClicked" Margin="0,5,0,0" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

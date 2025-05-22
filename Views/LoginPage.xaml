@@ -1,0 +1,13 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticalWork2Calculator.Views.LoginPage"
+             Title="Iniciar Sesión">
+    <VerticalStackLayout Spacing="15" Padding="30" VerticalOptions="Center">
+        <Label Text="Bienvenido" FontSize="Header" HorizontalOptions="Center" />
+        <Entry x:Name="UsernameEntry" Placeholder="Nombre de Usuario" />
+        <Entry x:Name="PasswordEntry" Placeholder="Contraseña" IsPassword="True" />
+        <Button Text="Iniciar Sesión" Clicked="OnLoginClicked" />
+        <Button Text="Registrar Nuevo Usuario" Clicked="OnRegisterClicked" />
+        <Button Text="¿Olvidaste tu contraseña?" Clicked="OnPasswordRecoveryClicked" FontAttributes="Italic" FontSize="Small" />
+    </VerticalStackLayout>
+</ContentPage>

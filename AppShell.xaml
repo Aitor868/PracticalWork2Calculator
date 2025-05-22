@@ -1,0 +1,10 @@
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:PracticalWork2Calculator.Views"
+       x:Class="PracticalWork2Calculator.AppShell"
+       FlyoutBehavior="Disabled">
+
+    <ShellContent Title="Login"
+                  ContentTemplate="{DataTemplate local:LoginPage}"
+                  Route="LoginPage" />
+</Shell>
