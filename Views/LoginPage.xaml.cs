@@ -30,7 +30,7 @@ public partial class LoginPage : ContentPage
         if (success)
         {
             CurrentUser = user.Username; 
-            await Shell.Current.GoToAsync($"//{nameof(ConverterPage)}");
+            await Shell.Current.GoToAsync("ConverterPage");
             UsernameEntry.Text = string.Empty; 
             PasswordEntry.Text = string.Empty;
         }
